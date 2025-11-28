@@ -1,0 +1,23 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* CSS Variables */
+:root{
+     --primary-font: "Noto Sans", sans-serif;
+     --secondary-font: "Noto Serif", cursive;
+     --blue: #4392F1;
+     --mist: #ECE8EF;
+     --lavender: #E3EBFF;
+     --alice: #E7F0FF;
+     --Cinnabar: #DC493A;
+} 
+
+body {
+    background-color: var(--alice);
+    color: var(--Cinnabar);
+    padding-top: 76px;
+}
+
+h1 {
+    font-family: var(--secondary-font);
+}
