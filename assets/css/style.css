@@ -5,19 +5,65 @@
 :root{
      --primary-font: "Noto Sans", sans-serif;
      --secondary-font: "Noto Serif", cursive;
-     --blue: #4392F1;
-     --mist: #ECE8EF;
-     --lavender: #E3EBFF;
-     --alice: #E7F0FF;
-     --Cinnabar: #DC493A;
+     --Blue: #92DCE5;
+     --Black: #2B303A;
+     --Lavender: #EEE5E9;
+     --Grey: #7C7C7C;
 } 
 
 body {
-    background-color: var(--alice);
-    color: var(--Cinnabar);
+    background-color: var(--Lavender);
+    color: var(--Black);
     padding-top: 76px;
 }
 
 h1 {
     font-family: var(--secondary-font);
+}
+
+#sec-1 {
+    padding-top: 50px;
+}
+.rps-btn{
+    border: 2px solid var(--Black);
+    background-color: var(--Grey);
+    color: var(--Lavender);
+    padding: 1rem;
+    min-width: 6.5rem;
+    min-height: 6.5rem;
+    
+    
+}
+.rps-btn:hover{
+    border: 2px solid var(--Blue);
+    color: var(--Blue);
+}
+
+/* Media queries*/
+@media only screen and (min-width: 600px) {
+    .rps-btn{
+        height: 8rem;
+        width: 8rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .rps-btn{
+        height: 9rem;
+        width: 9rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .rps-btn{
+        height: 10rem;
+        width: 10rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .rps-btn{
+        height: 11rem;
+        width: 11rem;
+    }
 }
