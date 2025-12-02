@@ -20,32 +20,50 @@
 <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" >
 </head>
-<body class="d-flex felx-column min-vh-100">
+<body class="d-flex flex-column min-vh-100">
     <header id="header" class="container section">
         <div class="row justify-content-center">
             <div class="col-12 text-center">
                 <h1 class="display-3">Rock-Paper-Site</h1>
             </div>
         </div>
+      </header>
+
         <!-- Buttons section-->
         <section id="sec-1">
           <div class="d-flex justify-content-around">
-            <button class="rps-btn">
+            <button class="rps-btn custom-button">
               <i class="fa-solid fa-hand-back-fist col-12"></i>
               Rock
             </button>
-            <button class="rps-btn">
+            <button class="rps-btn custom-button">
               <i class="fa-solid fa-hand col-12"></i>
               Paper
             </button>
-            <button class="rps-btn">
+            <button class="rps-btn custom-button">
               <i class="fa-solid fa-hand-scissors col-12"></i>
               Scissors
             </button>
           </div>
         </section>
-    </header>
-     
+
+        <!-- Score section -->
+         <section id="sec-2">
+          <div class="d-flex justify-content-center">
+            <p id="current-score" class="score display-6">Current Score: </p>
+            </div>
+
+            <div class="d-flex justify-content-center">
+            <p id="high-score" class="score display-6">High Score: </p>
+            </div>
+
+            <div class="d-flex justify-content-center">
+            <button id="reset" class="custom-button">Reset</button>
+          </div>
+          <div class="d-flex  justify-content-start">
+            <button id="help" class="custom-button">Help</button>
+          </div>
+         </section>
       <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
