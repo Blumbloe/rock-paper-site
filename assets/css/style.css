@@ -58,6 +58,10 @@ h1 {
 #help{
     margin-left: 50px;
 }
+/* hides the help text */
+#hide {
+    display: none;
+}
 
 
 /* Media queries*/
