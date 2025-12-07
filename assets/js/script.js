@@ -24,6 +24,8 @@ elements.forEach(button =>  {
     });
 });
 
+
+
 function computerValue(){
     const randNum = Math.floor(Math.random() * 3) + 1;
     

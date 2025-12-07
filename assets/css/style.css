@@ -21,7 +21,7 @@ h1 {
     font-family: var(--secondary-font);
 }
 
-#sec-1, #sec-2 {
+#sec-1, #sec-2, #sec-3{
     padding-top: 50px;
 }
 
@@ -59,6 +59,8 @@ button i{
 #help, #hide > h2, #hide > p{
     margin-left: 50px;
 }
+
+
 /* hides the help text */
 #hide {
     display: none;
