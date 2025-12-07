@@ -39,12 +39,15 @@ h1 {
 }
 
 
-.rps-btn{
+.gameBtn{
     padding: 1rem;
     min-width: 6.5rem;
     min-height: 6.5rem;
     
     
+}
+button i{
+    pointer-events: none;
 }
 
 #reset {
