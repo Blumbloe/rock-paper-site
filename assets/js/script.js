@@ -24,6 +24,23 @@ elements.forEach(button =>  {
     });
 });
 
+function computerValue(){
+    const randNum = Math.floor(Math.random() * 3) + 1;
+    
+    switch(randNum){
+        case 1:
+            computer = "rock";
+            break;
+        case 2:
+            computer = "paper";
+            break;
+        case 3:
+            computer = "scissors";
+            break;
+    }
+    return computer;
+}
+
 
 
 
