@@ -41,6 +41,28 @@ function computerValue(){
     return computer;
 }
 
+function result(buttonValue){
+    let computedValue = computerValue()
+    let playerValue = buttonValue
+    let gameResult = ""
+
+    if(playerValue == computedValue){
+        gameResult = "Draw!";
+    }
+    else if(computedValue == "rock"){ 
+        gameResult = (playerValue == "paper") ? "You Win!" : "You lose!";
+    }
+    else if(computedValue == "paper"){ 
+         gameResult = (playerValue == "scissors") ? "You Win!" : "You lose!";
+    }
+    else if(computedValue == "scissors"){ 
+       gameResult = (playerValue == "rock") ? "You Win!" : "You lose!";
+    }
+    const matchOutcome = document.querySelector("#Outcome");
+    matchOutcome.innerText = gameResult 
+} 
+
+
 
 
 
