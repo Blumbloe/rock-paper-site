@@ -8,7 +8,8 @@ $(document).ready(function(){
 /* Game */
 
 function newGame() {
-    game.cScore = 0;
+    oldScore = 0;
+   document.getElementById("current-score").innerText = oldScore;
 }
 
 
@@ -57,6 +58,7 @@ function result(buttonValue){
             incrementScore()
        } else {
             gameResult = "You Lose!"
+            newGame()
        }
     }
     else if(computedValue == "paper"){ 
@@ -65,6 +67,7 @@ function result(buttonValue){
             incrementScore()
        } else {
             gameResult = "You Lose!"
+            newGame()
        }
     }
     else if(computedValue == "scissors"){ 
@@ -73,6 +76,7 @@ function result(buttonValue){
             incrementScore()
        } else {
             gameResult = "You Lose!"
+            newGame()
        }
     }
     const matchOutcome = document.querySelector("#Outcome");
