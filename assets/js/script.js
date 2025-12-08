@@ -52,18 +52,37 @@ function result(buttonValue){
         gameResult = "Draw!";
     }
     else if(computedValue == "rock"){ 
-        gameResult = (playerValue == "paper") ? "You Win!" : "You lose!";
+       if (playerValue == "paper"){
+            gameResult = "You Win!"
+            incrementScore()
+       } else {
+            gameResult = "You Lose!"
+       }
     }
     else if(computedValue == "paper"){ 
-         gameResult = (playerValue == "scissors") ? "You Win!" : "You lose!";
+       if (playerValue == "scissors"){
+            gameResult = "You Win!"
+            incrementScore()
+       } else {
+            gameResult = "You Lose!"
+       }
     }
     else if(computedValue == "scissors"){ 
-       gameResult = (playerValue == "rock") ? "You Win!" : "You lose!";
+       if (playerValue == "rock"){
+            gameResult = "You Win!"
+            incrementScore()
+       } else {
+            gameResult = "You Lose!"
+       }
     }
     const matchOutcome = document.querySelector("#Outcome");
     matchOutcome.innerText = gameResult 
 } 
 
+function incrementScore() {
+    let oldScore = parseInt(document.getElementById("current-score").innerText);
+    document.getElementById("current-score").innerText = ++oldScore;
+}
 
 
 
