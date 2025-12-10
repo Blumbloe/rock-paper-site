@@ -1,17 +1,16 @@
-/* Help button */
-$(document).ready(function(){
-    $("button#help").click(function(){
-        $("#hide").toggle();
-    });
-});
+
+highScore()
 
 /* Game */
 
 function newGame() {
-    oldScore = 0;
-   document.getElementById("current-score").innerText = oldScore;
+   document.getElementById("current-score").innerText = 0;
 }
 
+function resetGame() {
+   document.getElementById("current-score").innerText = 0;
+   document.getElementById("Outcome").innerText = "";
+}
 
 
 const elements = document.querySelectorAll(".gameBtn");
@@ -19,8 +18,6 @@ elements.forEach(button =>  {
     button.addEventListener("click", (e) => {
        let buttonOutcome = e.target.getAttribute("data-button-type")
 
-      
-       
         console.log(result(buttonOutcome))
     });
 });
@@ -56,6 +53,7 @@ function result(buttonValue){
        if (playerValue == "paper"){
             gameResult = "You Win!"
             incrementScore()
+            highScore()
        } else {
             gameResult = "You Lose!"
             newGame()
@@ -65,6 +63,7 @@ function result(buttonValue){
        if (playerValue == "scissors"){
             gameResult = "You Win!"
             incrementScore()
+            highScore()
        } else {
             gameResult = "You Lose!"
             newGame()
@@ -74,6 +73,7 @@ function result(buttonValue){
        if (playerValue == "rock"){
             gameResult = "You Win!"
             incrementScore()
+            highScore()
        } else {
             gameResult = "You Lose!"
             newGame()
@@ -84,10 +84,29 @@ function result(buttonValue){
 } 
 
 function incrementScore() {
-    let oldScore = parseInt(document.getElementById("current-score").innerText);
-    document.getElementById("current-score").innerText = ++oldScore;
+    let currentScore = parseInt(document.getElementById("current-score").innerText);
+    ++currentScore
+    document.getElementById("current-score").innerText = currentScore;
 }
 
+function highScore() {
+   let currentScore = parseInt(document.getElementById("current-score").innerText);
+  // let newScore = document.getElementById("current-score").innerText = ++currentScore;
+   let highScore = localStorage.getItem("hs")
+   if (!highScore){
+     localStorage.setItem("hs", 0)
+   } else {
+      document.getElementById("high-score").innerText = highScore
+   }
+
+    
+    if (highScore < currentScore) {
+        localStorage.setItem("hs", currentScore)
+        newScore = localStorage.getItem("hs")
+            document.getElementById("high-score").innerText = newScore
+    }
+
+}
 
 
 

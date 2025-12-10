@@ -25,6 +25,15 @@ h1 {
     padding-top: 50px;
 }
 
+details {
+    padding-left: 2rem;
+}
+
+summary{
+    display: inline;
+    padding: 0.3rem;
+}
+
 
 /* Buttons */
 .custom-button{
@@ -56,15 +65,10 @@ button i{
     height: 3rem;
 }
 
-#help, #hide > h2, #hide > p{
-    margin-left: 50px;
-}
 
 
-/* hides the help text */
-#hide {
-    display: none;
-}
+
+
 
 
 

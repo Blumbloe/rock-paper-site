@@ -19,9 +19,8 @@
 
 <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" >
-<!-- jQuery CDN -->
- <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
 </head>
+
 <body class="d-flex flex-column min-vh-100">
     <header id="header" class="container section">
         <div class="row justify-content-center">
@@ -62,22 +61,23 @@
             </div>
 
             <div class="d-flex justify-content-center">
-            <p id="high-score" class="score display-6">High Score: </p>
+            <p class="score display-6">High Score: <span id="high-score">0</span> </p>
             </div>
 
             <div class="d-flex justify-content-center">
-            <button id="reset" class="custom-button">Reset</button>
+            <button id="reset" class="custom-button" onClick="resetGame()">Reset</button>
           </div>
           <div class="d-flex  justify-content-start">
-            <button id="help" class="custom-button">Help</button>
-            </div>
-            <div id="hide">
-            <h2>How to play:</h2>
-            <p class="justify-content-start col-6"> To play simply press one of the buttons that are labelled as either rock, paper or scissors!
-               If the button you chose beats the randomly assigned value the computer has then your score will go up by one. 
-               If you draw your score will not go up but you won't lose your current score and if you lose then your score is reset and you try again. </p>
+              <details>
+                <summary class="custom-button">Help</summary>
+                <p class="justify-content-start col-6"> To play simply press one of the buttons that are labelled as either rock, paper or scissors!
+                If the button you chose beats the randomly assigned value the computer has then your score will go up by one. 
+                If you draw your score will not go up but you won't lose your current score and if you lose then your score is reset and you try again. </p>
+
+              </details>
           </div>
          </section>
+
       <!-- Bootstrap JS -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
