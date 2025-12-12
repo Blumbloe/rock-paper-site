@@ -91,7 +91,6 @@ function incrementScore() {
 
 function highScore() {
    let currentScore = parseInt(document.getElementById("current-score").innerText);
-  // let newScore = document.getElementById("current-score").innerText = ++currentScore;
    let highScore = localStorage.getItem("hs")
    if (!highScore){
      localStorage.setItem("hs", 0)
