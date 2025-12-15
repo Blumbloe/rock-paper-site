@@ -102,7 +102,7 @@ function highScore() {
     if (highScore < currentScore) {
         localStorage.setItem("hs", currentScore)
         newScore = localStorage.getItem("hs")
-            document.getElementById("high-score").innerText = newScore
+        document.getElementById("high-score").innerText = newScore
     }
 
 }
