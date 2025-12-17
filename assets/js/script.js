@@ -90,7 +90,7 @@ function incrementScore() {
 }
 
 function highScore() {
-   let currentScore = parseInt(document.getElementById("current-score").innerText);
+   let currentScore = (document.getElementById("current-score").innerText);
    let highScore = localStorage.getItem("hs")
    if (!highScore){
      localStorage.setItem("hs", 0)
