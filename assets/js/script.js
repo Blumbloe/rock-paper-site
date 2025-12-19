@@ -19,6 +19,8 @@ elements.forEach(button =>  {
        let buttonOutcome = e.target.getAttribute("data-button-type")
 
         console.log(result(buttonOutcome))
+           document.getElementById("youchose").innerText = buttonOutcome
+    
     });
 });
 
@@ -38,6 +40,7 @@ function computerValue(){
             computer = "scissors";
             break;
     }
+    document.getElementById("computerchose").innerText = computer
     return computer;
 }
 
@@ -81,6 +84,7 @@ function result(buttonValue){
     }
     const matchOutcome = document.querySelector("#Outcome");
     matchOutcome.innerText = gameResult 
+ 
 } 
 
 function incrementScore() {
