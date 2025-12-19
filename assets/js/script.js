@@ -10,6 +10,8 @@ function newGame() {
 function resetGame() {
    document.getElementById("current-score").innerText = 0;
    document.getElementById("Outcome").innerText = "";
+   document.getElementById("youchose").innerText = "";
+   document.getElementById("computerchose").innerText = "";
 }
 
 
