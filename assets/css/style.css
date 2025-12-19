@@ -66,6 +66,9 @@ button i{
 }
 
 /* modal */
+#modalBtn{
+    margin-left: 5rem;
+}
 .modal {
   display: none; 
   position: fixed; 
