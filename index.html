@@ -74,15 +74,17 @@
             <div class="d-flex justify-content-center">
             <button id="reset" class="custom-button" onClick="resetGame()">Reset</button>
           </div>
-          <div class="d-flex  justify-content-start">
-              <details>
-                <summary class="custom-button">Help</summary>
-                <p class="justify-content-start col-6"> To play press one of the buttons that are labelled as either rock, paper or scissors!
+            <!-- Modal button -->
+          <button id="modalBtn" class="custom-button">Help</button>
+            <div id="Modal" class="modal">
+              <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>To play press one of the buttons that are labelled as either rock, paper or scissors!
                 If the button you chose beats the throw the computer made then your score will go up by one. 
-                If you draw then nothings happens and if you lose then your score is reset and you try again. You can use the reset button to reset your current score! </p>
-
-              </details>
+                If you draw then nothing happens and if you lose then your score is reset and you try again. You can use the reset button to reset your current score!</p>
+              </div>
           </div>
+          
          </section>
          </main>
       <!-- Bootstrap JS -->
