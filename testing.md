@@ -43,3 +43,29 @@ I noticed that the performance and accessibility were lower than I would like fo
 
 ![image of lighthouse performance for desktop after changes](/assets/documentation/lighthouse-pc-2.png)
 ![image of lighthouse performance for mobile after changes](/assets/documentation/lighthouse-mobile-2.png)
+
+### Validation
+
+[W3C](https://validator.w3.org/) validator has been used to check the HTML.
+
+[W3C](https://jigsaw.w3.org/css-validator/) jigsaw has been used to check the CSS stylesheet. 
+
+[Site24x7](https://www.site24x7.com/tools/javascript-validator.html) validator has been used to check the javascript.
+
+#### HTML
+The inital check in the index.html file came up with a few warnings which were resolved.
+
+![index.html validation warnings](/assets/documentation/html-validaiton-1.png)
+
+To solve these issues I replaced the sections with div's and added a non breaking space to the h2.
+On final check no warnings remain.
+
+#### CSS
+The inital check in the style.css file came up with no errors found.
+
+![style.css validation](/assets/documentation/css-validation-1.png)
+
+#### Javascript
+The initial check in the script.js file came up with a few warnings which were resolved, the only remaining warnings are not relevent to the code itself and can be ignored.
+
+![script.js validation](/assets/documentation/java-validation-1.png)
